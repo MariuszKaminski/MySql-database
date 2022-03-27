@@ -1,3 +1,4 @@
+import os
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -8,6 +9,8 @@ db = mysql.connector.connect(
     )
 
 cur = db.cursor()
+
+
 
 cur.execute('SELECT * FROM person')
 
